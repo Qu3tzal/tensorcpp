@@ -88,9 +88,9 @@ class Tensor
 };
 
 // String display. Does not serialize, for display purposes only!
-std::ofstream & operator<<(std::ofstream &, const Tensor<int> &);
-std::ofstream & operator<<(std::ofstream &, const Tensor<float> &);
-std::ofstream & operator<<(std::ofstream &, const Tensor<double> &);
+std::ostream & operator<<(std::ostream &, const Tensor<int> &);
+std::ostream & operator<<(std::ostream &, const Tensor<float> &);
+std::ostream & operator<<(std::ostream &, const Tensor<double> &);
 
 // Implementation.
 #include "tensor/Tensor.tpp"

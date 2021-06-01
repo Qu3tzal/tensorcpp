@@ -150,14 +150,17 @@ Tensor<ElementT>::Tensor(std::shared_ptr<Memory<ElementT>> memory, const Index &
 {}
 
 // String display. Does not serialize, for display purposes only!
-std::ofstream & operator<<(std::ofstream &os, const Tensor<int> &t) {
+std::ostream & operator<<(std::ostream &os, const Tensor<int> &t) {
+    os << "tensor int";
     return os;
 }
 
-std::ofstream & operator<<(std::ofstream &os, const Tensor<float> &t) {
+std::ostream & operator<<(std::ostream &os, const Tensor<float> &t) {
+    os << "tensor float";
     return os;
 }
 
-std::ofstream & operator<<(std::ofstream &os, const Tensor<double> &t) {
+std::ostream & operator<<(std::ostream &os, const Tensor<double> &t) {
+    os << "tensor double";
     return os;
 }
